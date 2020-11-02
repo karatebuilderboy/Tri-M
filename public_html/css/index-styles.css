@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/* Is this necessary? */
+html {
+    height: 100%;
+}
+body {
+    color: black;
+    background-color: white;
+    font-family: Montserrat;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+}
+header > img {
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+    height: 6vh;
+}
+nav > div {
+    border-bottom-style: none;
+}
+nav > img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2vh;
+    width: 6vh;
+}
+.collapsed {
+    display: none;
+}
+.expanded {
+    display: block;
+    margin: 0;
+    position: fixed;
+    top: 10vh;
+    background-color: white;
+    color: black;
+    height: 28vh;
+    width: 100%;
+}
+.expanded > h1 {
+    margin-left: 5vh;
+    padding: 1vh;
+}
+a {
+    color: #167887;
+    text-decoration: none;
+}
+h1 {
+    font-size: 3vh;
+}
+body > div {
+    height: 20vh;
+    width: 40vh;
+    margin: auto;
+    margin-top: 35vh;
+    text-align: center;
+    color: #167887;
+}
+span {
+    font-size: 15vh;
+}
+h2 {
+    margin-top: 0;
+    font-size: 5vh;
+}
+.left-corner {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40vh;
+    width: 40vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.right-corner {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 40vh;
+    width: 40vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

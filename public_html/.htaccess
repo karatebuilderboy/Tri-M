@@ -1,0 +1,24 @@
+# Disable directory browsing
+Options All -Indexes
+
+# Disable 300 multiple choices pages
+Options -MultiViews
+CheckSpelling off
+
+# Redirect WWW requests to non-WWW
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Error pages
+ErrorDocument 404 "404 Error: Page Not Found"
+ErrorDocument 403 "403 Error: Forbidden Page"
+
+<FilesMatch "(.png|.ico)$">
+        # 4 days
+        Header set Cache-Control "max-age=345600, public"
+</FilesMatch>
+
+# Hide Apache version
+# Unfortunately, ServerTokens Prod can only be done in the httpd.conf file (which we don't have access to)
+ServerSignature Off
