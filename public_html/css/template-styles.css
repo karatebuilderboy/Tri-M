@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/* Is this necessary? */
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #36A8B7;
+    color: white;
+    font-family: Montserrat;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+}
+header > img {
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+    height: 6vh;
+}
+nav > div {
+    border-bottom-style: none;
+}
+nav > img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2vh;
+    width: 6vh;
+}
+.collapsed {
+    display: none;
+}
+.expanded {
+    display: block;
+    margin: 0;
+    position: fixed;
+    top: 10vh;
+    background-color: white;
+    color: black;
+    height: 28vh;
+    width: 100%;
+}
+.expanded > h1 {
+    margin-left: 5vh;
+    padding: 1vh;
+}
+a {
+    color: #167887;
+    text-decoration: none;
+}
+div {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    /* I guess this works */
+    margin-top: 2vh;
+    padding-bottom: 2vh;
+    width: 90%;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list > div {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 2.5vh;
+    padding-bottom: 1.5vh;
+    width: 35vh;
+    max-width: 90vw;
+}
+h1 {
+    font-size: 3vh;
+}
+h2 {
+    /* To fit the volunteer list under the heading */
+    width: 90%;
+    font-size: 2.75vh;
+}
+p {
+    font-size: 2.5vh;
+}
